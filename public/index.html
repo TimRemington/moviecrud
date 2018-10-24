@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" media="screen,projection" />
-
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
-<body style="background-color: lightblue">
+<body style="background-color: lightblue; font-family: 'Russo One'">
   <div class="col s12 m12 l12" style="padding:10px 50px 50px 50px">
     <h1>Movie Rating Database</h1>
-    <h3>A place where I can rate movies... and since I have good taste, I'm always right.</h3>
+    <h3>A place where I can rate movies.</h3>
   </div>
 
   <br></br>
@@ -20,18 +22,18 @@
   <table id="movies-table">
     <thead>
       <tr>
-        <th>Title</th>
-        <th>Director</th>
-        <th>Year</th>
-        <th>Rating</th>
-        <th>Delete</th>
-        <th>Edit</th>
+        <th><h5>Title</h5></th>
+        <th><h5>Director</h5></th>
+        <th><h5>Year</h5></th>
+        <th><h5>Rating</h5></th>
+        <th><h5>Delete</h5></th>
+        <th><h5>Edit</h5></th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
 
-  <form id="create-movie">
+  <form id="create-movie" style="background-color: lightgrey">
     <label for="title">Title</label>
     <input type="text" name="title" id="title" required><br>
 
@@ -47,7 +49,7 @@
     <input type="submit" value="Add Movie" id="submit-form">
   </form>
 
-  <form id="edit-movie">
+  <form id="edit-movie" style="background-color: lightgrey">
     <label for="title">Title</label>
     <input type="text" name="title" id="edit_title" required><br>
 

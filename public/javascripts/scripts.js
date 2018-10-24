@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(ev) {
-
   //console.log('The DOM is working!');
 
   getMovies()
